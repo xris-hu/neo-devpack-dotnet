@@ -4,13 +4,13 @@
     {
         public extern byte Usage
         {
-            [Syscall("Neo.Attribute.GetUsage")]
+            [Syscall("Ontology.Attribute.GetUsage")]
             get;
         }
 
         public extern byte[] Data
         {
-            [Syscall("Neo.Attribute.GetData")]
+            [Syscall("Ontology.Attribute.GetData")]
             get;
         }
     }

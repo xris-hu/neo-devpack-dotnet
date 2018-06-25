@@ -4,17 +4,17 @@
     {
         public extern byte[] Hash
         {
-            [Syscall("Neo.Transaction.GetHash")]
+            [Syscall("System.Transaction.GetHash")]
             get;
         }
 
         public extern byte Type
         {
-            [Syscall("Neo.Transaction.GetType")]
+            [Syscall("Ontology.Transaction.GetType")]
             get;
         }
 
-        [Syscall("Neo.Transaction.GetAttributes")]
+        [Syscall("Ontology.Transaction.GetAttributes")]
         public extern TransactionAttribute[] GetAttributes();
 
         [Syscall("Neo.Transaction.GetInputs")]

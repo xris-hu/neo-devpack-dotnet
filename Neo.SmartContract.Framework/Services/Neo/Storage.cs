@@ -6,38 +6,38 @@ namespace Neo.SmartContract.Framework.Services.Neo
     {
         public static extern StorageContext CurrentContext
         {
-            [Syscall("Neo.Storage.GetContext")]
+            [Syscall("System.Storage.GetContext")]
             get;
         }
 
-        [Syscall("Neo.Storage.Get")]
+        [Syscall("System.Storage.Get")]
         public static extern byte[] Get(StorageContext context, byte[] key);
 
-        [Syscall("Neo.Storage.Get")]
+        [Syscall("System.Storage.Get")]
         public static extern byte[] Get(StorageContext context, string key);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, byte[] key, byte[] value);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, byte[] key, BigInteger value);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, byte[] key, string value);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, string key, byte[] value);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, string key, BigInteger value);
 
-        [Syscall("Neo.Storage.Put")]
+        [Syscall("System.Storage.Put")]
         public static extern void Put(StorageContext context, string key, string value);
 
-        [Syscall("Neo.Storage.Delete")]
+        [Syscall("System.Storage.Delete")]
         public static extern void Delete(StorageContext context, byte[] key);
 
-        [Syscall("Neo.Storage.Delete")]
+        [Syscall("System.Storage.Delete")]
         public static extern void Delete(StorageContext context, string key);
 
         [Syscall("Neo.Storage.Find")]
@@ -45,5 +45,8 @@ namespace Neo.SmartContract.Framework.Services.Neo
 
         [Syscall("Neo.Storage.Find")]
         public static extern Iterator<string, byte[]> Find(StorageContext context, string prefix);
+
+        [Syscall("System.Storage.GetReadOnlyContext")]
+        public static extern void GetReadOnlyContext();
     }
 }

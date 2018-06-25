@@ -36,10 +36,10 @@ namespace Neo.SmartContract.Framework
         [NonemitWithConvert(ConvertMethod.ToScriptHash)]
         public extern static byte[] ToScriptHash(this string address);
 
-        [Syscall("Neo.Runtime.Serialize")]
+        [Syscall("System.Runtime.Serialize")]
         public extern static byte[] Serialize(this object source);
 
-        [Syscall("Neo.Runtime.Deserialize")]
+        [Syscall("System.Runtime.Deserialize")]
         public extern static object Deserialize(this byte[] source);
     }
 }
