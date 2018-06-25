@@ -33,6 +33,6 @@
         public static extern Contract GetContract(byte[] script_hash);
 
         [Syscall("System.Blockchain.GetTransactionHeight")]
-        public static extern Contract GetTransactionHeight(byte[] script_hash);
+        public static extern uint GetTransactionHeight(byte[] script_hash);
     }
 }
