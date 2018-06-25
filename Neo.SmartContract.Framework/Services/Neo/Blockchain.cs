@@ -11,7 +11,7 @@
         [Syscall("System.Blockchain.GetHeader")]
         public static extern Header GetHeader(byte[] hash);
 
-        [Syscall("NSystemeo.Blockchain.GetBlock")]
+        [Syscall("System.Blockchain.GetBlock")]
         public static extern Block GetBlock(uint height);
 
         [Syscall("System.Blockchain.GetBlock")]
