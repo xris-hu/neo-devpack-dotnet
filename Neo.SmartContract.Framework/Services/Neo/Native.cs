@@ -4,7 +4,7 @@
     {
 
         [Syscall("Ontology.Native.Invoke")]
-        public static extern object Invoke(int version, byte[] address, string method, object[] args);
+        public static extern byte[] Invoke(int version, byte[] address, string method, object args);
 
     }
 }
