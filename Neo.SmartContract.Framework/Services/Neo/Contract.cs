@@ -21,10 +21,12 @@
         }
 
         [Syscall("Ontology.Contract.Create")]
-        public static extern Contract Create(byte[] script, byte[] parameter_list, byte return_type, bool need_storage, string name, string version, string author, string email, string description);
+        //public static extern Contract Create(byte[] script, byte[] parameter_list, byte return_type, bool need_storage, string name, string version, string author, string email, string description);
+        public static extern Contract Create(byte[] script, bool need_storage, string name, string version, string author, string email, string description);
 
         [Syscall("Ontology.Contract.Migrate")]
-        public static extern Contract Migrate(byte[] script, byte[] parameter_list, byte return_type, bool need_storage, string name, string version, string author, string email, string description);
+        //public static extern Contract Migrate(byte[] script, byte[] parameter_list, byte return_type, bool need_storage, string name, string version, string author, string email, string description);
+        public static extern Contract Migrate(byte[] script, bool need_storage, string name, string version, string author, string email, string description);
 
         [Syscall("System.Contract.Destroy")]
         public static extern void Destroy();
