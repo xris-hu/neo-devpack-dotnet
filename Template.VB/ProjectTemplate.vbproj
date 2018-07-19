@@ -33,8 +33,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="Neo.SmartContract.Framework, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Neo.SmartContract.Framework.2.7.3\lib\net40\Neo.SmartContract.Framework.dll</HintPath>
+    <Reference Include="Ont.SmartContract.Framework, Version=2.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ont.SmartContract.Framework.2.7.3\lib\net40\Ont.SmartContract.Framework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -50,8 +50,8 @@ $endif$
 
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
-    <Import Include="Neo.SmartContract.Framework" />
-    <Import Include="Neo.SmartContract.Framework.Services.Neo" />
+    <Import Include="Ont.SmartContract.Framework" />
+    <Import Include="Ont.SmartContract.Framework.Services.Ont" />
     <Import Include="System" />
     <Import Include="System.Collections" />
     <Import Include="System.Collections.Generic" />

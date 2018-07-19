@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.16
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo.SmartContract.Framework", "Neo.SmartContract.Framework\Neo.SmartContract.Framework.csproj", "{C30B5859-D4B9-46E8-A797-6B0A1B49B590}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ont.SmartContract.Framework", "Ont.SmartContract.Framework\Ont.SmartContract.Framework.csproj", "{C30B5859-D4B9-46E8-A797-6B0A1B49B590}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.CSharp", "Template.CSharp\Template.CSharp.csproj", "{6F0591A9-B218-49BB-B666-CE6D1FA8F990}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -45,5 +45,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C421C6C0-F3B7-46CE-A5D1-31512B8F7DA4}
 	EndGlobalSection
 EndGlobal
