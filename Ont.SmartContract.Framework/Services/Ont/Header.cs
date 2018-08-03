@@ -10,7 +10,7 @@
 
         public extern uint Version
         {
-            [Syscall("Neo.Header.GetVersion")]
+            [Syscall("Ontology.Header.GetVersion")]
             get;
         }
 
