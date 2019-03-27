@@ -22,5 +22,14 @@
 
         [Syscall("System.Runtime.Log")]
         public static extern void Log(string message);
+
+        [Syscall("Ontology.Runtime.Base58ToAddress")]
+        public static extern byte[] Base58ToAddress(string base58);
+
+        [Syscall("Ontology.Runtime.AddressToBase58")]
+        public static extern string AddressToBase58(byte[] address);
+
+        [Syscall("Ontology.Runtime.GetCurrentBlockHash")]
+        public static extern byte[] GetCurrentBlockHash();
     }
 }
