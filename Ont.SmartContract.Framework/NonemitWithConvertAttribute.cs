@@ -6,6 +6,7 @@ namespace Ont.SmartContract.Framework
     {
         HexToBytes,
         ToScriptHash,
+        ToBigInteger,
     }
 
     [AttributeUsage(AttributeTargets.Method | AttributeTargets.Property | AttributeTargets.Constructor)]
